@@ -1,0 +1,13 @@
+---
+- name: Install pip
+  yum: name=python-pip state=present
+
+- name: Install Blogstrap
+  pip: name=Blogstrap state=present
+
+- name: Create /var/www
+  file: path=/var/www state=directory
+
+- name: Clone Shellinthecloud
+  git: repo={{ blogstrap_git }} dest=/var/www/shellinthecloud
+  notify: give read permission

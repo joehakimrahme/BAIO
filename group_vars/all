@@ -1,0 +1,6 @@
+# This is used for the nginx server configuration
+nginx_port: 80
+server_hostname: server.example.com
+
+# Blogstrap git upstream
+blogstrap_git: https://github.com/joehakimrahme/shellinthecloud

@@ -1,0 +1,7 @@
+---
+- name: give read permission
+  command: chmod -R 777 /var/www/shellinthecloud
+  notify: restart gunicorn
+
+- name: restart gunicorn
+  service: name=gunicorn state=restarted enabled=yes

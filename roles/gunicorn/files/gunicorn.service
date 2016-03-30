@@ -1,0 +1,9 @@
+[Unit]
+Description=gunicorn daemon
+After=network.target
+
+[Service]
+User=nginx
+Group=nginx
+WorkingDirectory=/var/www/shellinthecloud
+ExecStart=/usr/bin/gunicorn --bind unix:blog.sock wsgi:application

@@ -1,0 +1,10 @@
+---
+- name: Install Nginx
+  hosts: blogserver
+  remote_user: root
+
+  roles:
+    - common
+    - nginx
+    - gunicorn
+    - blogstrap
