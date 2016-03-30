@@ -1,5 +1,5 @@
 ---
-- name: Install Nginx
+- name: Blostrap All in One
   hosts: blogserver
   remote_user: root
 
