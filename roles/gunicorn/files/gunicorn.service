@@ -5,5 +5,5 @@ After=network.target
 [Service]
 User=nginx
 Group=nginx
-WorkingDirectory=/var/www/shellinthecloud
+WorkingDirectory=/var/www/shellinthecloud/.blogstrap
 ExecStart=/usr/bin/gunicorn --bind unix:blog.sock wsgi:application

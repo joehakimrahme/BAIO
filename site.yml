@@ -1,6 +1,6 @@
 ---
 - name: Blostrap All in One
-  hosts: blogserver
+  hosts: all
   remote_user: root
 
   roles:

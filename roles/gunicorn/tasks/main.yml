@@ -1,6 +1,6 @@
 ---
 - name: Install gunicorn
-  yum: name=python-gunicorn state=present
+  package: name=python-gunicorn state=present
 
 - name: Copy service file
   copy: src=gunicorn.service dest=/etc/systemd/system/gunicorn.service
