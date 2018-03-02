@@ -4,7 +4,6 @@
 
 - name: Copy service file
   copy: src=gunicorn.service dest=/etc/systemd/system/gunicorn.service
-  notify: Systemctl Daemon reload
 
 - name: Start gunicorn service
-  service: name=gunicorn state=started
+  service: name=gunicorn state=started daemon_reload=yes

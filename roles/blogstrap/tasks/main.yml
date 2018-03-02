@@ -9,5 +9,5 @@
   file: path=/var/www state=directory
 
 - name: Clone Shellinthecloud
-  git: repo={{ blogstrap_git }} dest=/var/www/shellinthecloud force=yes
+  git: repo={{ blogstrap_git }} dest=/var/www/shellinthecloud force=yes version=master
   notify: give read permission
