@@ -11,12 +11,10 @@ only as a technology preview so you can get started with Blogstrap.
 Pre-requisites
 --------------
 
-Make sure you have [Ansible](https://www.ansible.com/)
-installed. Ansible can be executed from any machine on the network,
-ideally from inside a virtualenvironment. I usually run it on my
-laptop. I have tried it with `ansible==2.0.1.0`, installed from PyPI
-in a virtualenvironment.
-
+Make sure you have [Ansible](https://www.ansible.com/) installed
+version >= 2.4. Ansible can be executed from any machine on the
+network, ideally from inside a virtualenvironment. I usually run it on
+my laptop.
 
 You need to have the IP of a machine you can reach over SSH. As of
 now, this playbook only supports **CentOS 7**. Set up key-based
