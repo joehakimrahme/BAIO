@@ -1,6 +1,6 @@
 ---
 - name: give read permission
-  command: chmod -R 777 /var/www/shellinthecloud
+  file: path=/var/www/shellinthecloud mode=0777
   notify: restart gunicorn
 
 - name: restart gunicorn
