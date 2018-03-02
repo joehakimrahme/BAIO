@@ -1,3 +1,4 @@
+![Build Status](https://travis-ci.org/joehakimrahme/BAIO.svg?branch=master)
 BAIO - Blogstrap All In One
 ===========================
 
